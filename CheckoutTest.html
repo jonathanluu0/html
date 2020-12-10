@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "Checkout.css" />
+    <script type="text/javascript" src="app.js"> async </script>
+    <script src="searchbar.js"></script>
+    <title>SmArt Design</title>
+
+  </head>
+  <body>
+    <div class="topnav">
+      <h1 class="SmArt">SmArt Design</h1>
+      <h2>Login to Your Account</h2>
+      <form>
+        <input type="text" title="username" placeholder="Username" />
+        <input type="password" title="username" placeholder="Password" />
+        <button type="submit" class="btn">Login</button>
+        <a class="forgot" href="ForgotPass.html">Forgot Password?</a>
+        <a href="SignUp.html">Sign Up!</a>
+
+      </form>
+      <ul class="topnav">
+        <li class="navbar"><a href="Homepage.html">Home</a></li>
+        <li class="navbar"><a href="Products.html">Products</a></li>
+        <li class="navbar" ><a href="SpecialDeals.html">Special Deals</a></li>
+        <li class="navbar" ><a href="AboutUs.html">About Us</a></li>
+        <li class="navbar" style="float:right"><a class="checkout" href="Checkout.html">Checkout</a></li>
+        <li class="navbar" style="float:left" id="searchInput">
+          <input type="image" src="Images/search.png" onclick="search()" class="searchButton" >
+          <div id="dropSearch" class="sContent">
+            <input type="text" placeholder="Search here..." id="myInput" onkeyup="filterFunction()">
+            <a href="ItemPages/Item1.html">Crayola Markers</a>
+            <a href="ItemPages/Item2.html">Prismacolor Premier Color Pencil</a>
+            <a href="ItemPages/Item3.html">BOSOBO Paint Brushes</a>
+            <a href="ItemPages/Item4.html">Master's Touch Watercolor Paints</a>
+            <a href="ItemPages/Item5.html">Round Aluminum Paint Palette</a>
+            <a href="ItemPages/Item6.html">The Fine Touch Blank Canvas</a>
+            <a href="ItemPages/Item7.html">Drawing Board With Clip</a>
+            <a href="ItemPages/Item8.html">Small Beechwood Easel</a>
+          </div>
+        </li>
+      </ul>
+        </div>
+        <hr>
+<!--________________________________________________________________________________________--->
+
+    <section>
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row" width="100%">
+        <section class="checkout-header">
+          <span id="headerItem">ITEM</span>
+          <span id="headerPrice">PRICE</span>
+          <span id="headerQuantity">QUANTITY</span>
+          <div class="remove-button-div" id="remove-all-button"> 
+            <input type="button" class="remove-button" value="Remove All"href=#Remove> 
+          </div>
+        </section>
+      </div>
+
+      <div class="cart-items">    
+        <div class="cart-item">      
+          <img class="cart-item-image" src="Images/P1.jpg" alt="Crayola Markers 10ct">
+          <div class="cart-item-details">
+            <div id=title-width>
+              <span class="cart-item-title"> Crayola Markers 10ct</span>
+            </div>
+            <span class="cart-item-price">$1.99</span>
+
+              <select value="1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            <div class="remove-button-div"> <input type="button" class="remove-button" value="Remove">
+       <!-- <div class="remove-button-div"><button class="remove-button" type="button">Remove</button></div>
+            <div class="remove-button-div"> <input type="button" class="remove-button" value="Remove"> </div>
+                  
+       --> 
+          </div>
+        </div>  
+        <br>                           
+      </div>
+    
+              
+      <div class="cart-total">
+        <table class="Cost">
+
+          
+          <tr >
+            <td class= taxandtotal> Total:</td>
+            <td span class="cart-total-price"> $0.00</td>
+          <tr class="PayBtn"  >
+            <td colspan="2"  > <form  action=" # " >  <input  type="submit" value="Pay Now" /> </form> </td>
+          </tr>
+        </table>
+      </div>
+
+  </body>
+</html>
